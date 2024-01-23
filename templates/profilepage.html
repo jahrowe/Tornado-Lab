@@ -24,7 +24,7 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);          
         }
         h1 {
             color: #333;
@@ -39,6 +39,7 @@
         <h1>User Profile</h1>
     </header>
     <main>
+        <img src="{{ image }}" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
         <p><strong>Name:</strong> {{ name }}</p>
         <p><strong>Date of Birth:</strong> {{ dateOfBirth }}</p>
         <p><strong>Email:</strong> {{ email }}</p>
