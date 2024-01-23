@@ -18,7 +18,8 @@ class ProfileHandler(tornado.web.RequestHandler):
                 self.render("profilepage.html",
                             name=info.get("name"),
                             dateOfBirth=info.get("dob"),
-                            email=info.get("email")
+                            email=info.get("email"),
+                            image=info.get("image")
                             )
             else:
                 self.write("User not found")
